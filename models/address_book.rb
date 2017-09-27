@@ -6,7 +6,6 @@
 
      def initialize
        @entries = []
-       puts "test"
      end
 
 
