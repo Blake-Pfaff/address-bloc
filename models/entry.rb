@@ -7,5 +7,4 @@ class Entry
     @phone_number = phone_number
     @email = email
   end
-  "WORDS"
 end
