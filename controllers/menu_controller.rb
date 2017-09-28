@@ -15,7 +15,9 @@
      puts "2 - Create an entry"
      puts "3 - Search for an entry"
      puts "4 - Import entries from a CSV"
-     puts "5 - Exit"
+     puts "5 - View Entry by Number"
+     puts "6 - Exit"
+
      print "Enter your selection: "
 
      #gets user input
@@ -39,6 +41,10 @@
          read_csv
          main_menu
        when 5
+         system "clear"
+         view_entry_number_n
+         main_menu
+       when 6
          puts "Good-bye!"
          #terminates program w/ exit (0) signals exiting w/o error
          exit(0)
@@ -50,7 +56,19 @@
      end
    end
 
-   #stubs for the rest of the code
+   def view_entry_number_n
+     system "clear"
+     puts "please select entry by number"
+     number_entry = gets.chomp
+
+      while number_entry != Integer
+        puts "please select entry by number"
+        break
+      end
+       puts "you selected #{number_entry}"
+       main_menu
+    end
+
    def view_all_entries
        #iterate through entries in Addess
      address_book.entries.each do |entry|
@@ -88,7 +106,7 @@
 
    def read_csv
    end
-      def entry_submenu(entry)
+   def entry_submenu(entry)
      #displays submenu options
      puts "n - next entry"
      puts "d - delete entry"
@@ -114,31 +132,6 @@
          entry_submenu(entry)
      end
 
-     def entry_submenu(entry)
-     # #16
-       puts "n - next entry"
-       puts "d - delete entry"
-       puts "e - edit this entry"
-       puts "m - return to main menu"
 
-     # #17
-     selection = gets.chomp
-
-     case selection
-     # #18
-       when "n"
-     # #19
-       when "d"
-       when "e"
-     # #20
-       when "m"
-         system "clear"
-         main_menu
-       else
-         system "clear"
-         puts "#{selection} is not a valid input"
-         entry_submenu(entry)
-       end
-     end
     end
  end
