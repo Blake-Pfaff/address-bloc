@@ -50,7 +50,7 @@ RSpec.describe AddressBook do
        # Check the size of the entries in AddressBook
        expect(book_size).to eq 5
       #access first element in array from AddressBook
-
+     end
      it "imports the 1st entry" do
        book.import_from_csv("entries.csv")
        # Check the first entry
@@ -89,5 +89,5 @@ RSpec.describe AddressBook do
         check_entry(entry_five, "Sussie", "555-555-2036", "sussie@blocmail.com")
       end
     end
-  end
+
 end
