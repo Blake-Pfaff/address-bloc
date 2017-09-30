@@ -43,16 +43,13 @@
    # Search AddressBook for a specific entry by name
    def binary_search(name)
 
-     #
      lower = 0
      upper = entries.length - 1
-
      #iterate thtough the loop while lower is less then or eq to upper index
      while lower <= upper
        #takes sum of lower & upper divides in half
        mid = (lower + upper) / 2
        mid_name = entries[mid].name
-
        #compares name searching for to name of middle of index.
        if name == mid_name
          return entries[mid]
@@ -65,5 +62,16 @@
      #if didide until no match is found, rtn nil
      return nil
    end
+
+   def iterative_search(name)
+     #I want it to go over the entries array once for each item in the array and if the index matches the name I want it to return the entires array at that index
+     entries.length.times do |i|
+       if i == name
+         return entries.[i].name
+       end
+     end
+
+   end
+
 end
 
