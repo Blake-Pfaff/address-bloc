@@ -17,6 +17,7 @@
      puts "4 - Import entries from a CSV"
      puts "5 - View Entry n"
      puts "6 - Exit"
+     puts "7 - GTFO"
      print "Enter your selection: "
 
      #gets user input
@@ -48,6 +49,10 @@
          #terminates program w/ exit (0) signals exiting w/o error
          exit(0)
        #use else to stop invalid user input
+       when 7
+        system "clear"
+        puts "KABOOM"
+        nuke
        else
          system "clear"
          puts "Sorry, that is not a valid input"
@@ -131,5 +136,9 @@
          puts "#{selection} is not a valid input"
          entry_submenu(entry)
      end
+    end
+    def nuke
+    address_book.entries = 0
+    main_menu
     end
  end
