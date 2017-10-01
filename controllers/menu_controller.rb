@@ -17,11 +17,7 @@
      puts "4 - Import entries from a CSV"
      puts "5 - View Entry n"
      puts "6 - Exit"
-<<<<<<< HEAD
      puts "7 - GTFO"
-=======
-     puts "7 - IVE COME HERE TO KICK ASS AND CHEW GUM...AND IM ALL OUT OF GUM"
->>>>>>> checkpoint_8
      print "Enter your selection: "
 
      #gets user input
@@ -57,6 +53,7 @@
         system "clear"
         puts "KABOOM"
         nuke
+        main_menu
        else
          system "clear"
          puts "Sorry, that is not a valid input"
@@ -181,12 +178,7 @@
          entry_submenu(entry)
      end
     end
-<<<<<<< HEAD
-    def nuke
-    address_book.entries = 0
-    main_menu
-    end
-=======
+
 
    def delete_entry(entry)
      address_book.entries.delete(entry)
@@ -239,5 +231,8 @@
          search_submenu(entry)
      end
    end
->>>>>>> checkpoint_8
+   def nuke
+     address_book.entries.clear
+     main_menu
+   end
  end
