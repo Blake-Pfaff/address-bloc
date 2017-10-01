@@ -17,6 +17,7 @@
      puts "4 - Import entries from a CSV"
      puts "5 - View Entry n"
      puts "6 - Exit"
+     puts "7 - IVE COME HERE TO KICK ASS AND CHEW GUM...AND IM ALL OUT OF GUM"
      print "Enter your selection: "
 
      #gets user input
