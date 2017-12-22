@@ -1,4 +1,4 @@
 
 # address-bloc
 
-* An address book app that ran in the Rails console 
+* An address book app to be ran in the Rails console 
