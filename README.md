@@ -14,6 +14,7 @@ Ruby
 
 * [Ruby](https://www.ruby-lang.org/en/) - Language used. 
 
+## Author
 
-* **Blake Pfaff** 
+ **Blake Pfaff** 
 
